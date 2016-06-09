@@ -173,8 +173,8 @@ lazy val setup = project
   )
 
 lazy val `ammonium` = project.in(file("."))
-  .aggregate(`interpreter-api`, interpreter, `shell-api`, `shell-tests`, spark161, spark160, spark152, spark151, spark150, spark141, spark131, spark130, spark122, spark121, spark120, spark111, spark110, shell, tprint, setup)
-  .dependsOn(`interpreter-api`, interpreter, `shell-api`, `shell-tests`, spark161, spark160, spark152, spark151, spark150, spark141, spark131, spark130, spark122, spark121, spark120, spark111, spark110, spark200, shell, tprint, setup)
+  .aggregate(`interpreter-api`, interpreter, `shell-api`, `shell-tests`, spark200, shell, tprint, setup)
+  .dependsOn(`interpreter-api`, interpreter, `shell-api`, `shell-tests`, spark200, shell, tprint, setup)
   .settings(commonSettings)
   .settings(noPublishSettings)
   .settings(
